@@ -1,0 +1,8 @@
+.error {
+    color: var(--text-red);
+    padding: 1rem 0;
+}
+
+.error-input {
+    border-color: var(--text-red) !important;
+}

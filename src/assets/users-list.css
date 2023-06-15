@@ -1,0 +1,121 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    margin-top: 2rem;
+}
+
+td {
+    padding: .75rem 0;
+}
+
+tbody:before {
+    line-height: .75em;
+    content: "\200C";
+    display: block;
+}
+
+thead tr {
+    background: white !important;
+}
+
+tbody tr td:first-child,
+tbody tr td:last-child {
+    width: 10%;
+}
+
+tbody tr td:nth-child(2) {
+    width: 80%;
+}
+
+
+tr:nth-child(odd) {
+    background: var(--dark-gray);
+}
+
+.users-list-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--light-gray);
+    padding-bottom: 1rem;
+}
+
+.users-list-search-box {
+    background: var(--light-gray);
+    width: 30%;
+    padding: .5rem 1rem;
+    border-radius: 5px;
+    position: relative;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.users-list-search-box svg {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(-50%, -50%);
+}
+
+.users-list-item td:nth-child(2) {
+    word-break: break-all;
+}
+
+.users-list-item-actions {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+    color: var(--deep-dark-gray);
+}
+
+.users-list-item-actions div {
+    padding-top: .75rem;
+    padding-bottom: .75rem;
+}
+
+.users-list-item-actions svg {
+    cursor: pointer;
+}
+
+.user-list-item-avatar {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin-left: .75rem;
+}
+
+.users-list-not-found {
+    padding: 2rem 0 1rem 0;
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+    tbody tr td:first-child,
+    tbody tr td:last-child {
+        width: 15%;
+    }
+
+    tbody tr td:nth-child(2) {
+        width: 70%;
+    }
+
+    .users-list-search-box {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 443px) {
+    tbody tr td:first-child,
+    tbody tr td:last-child {
+        width: 20%;
+    }
+
+    tbody tr td:nth-child(2) {
+        width: 60%;
+    }
+}

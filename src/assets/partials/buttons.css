@@ -1,0 +1,26 @@
+.btn {
+    padding: .5rem 1.25rem;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+    border: 1px solid transparent;
+}
+
+.btn-success {
+    background: var(--primary-green);
+}
+
+.btn-white {
+    background: white;
+    border-color: var(--deep-dark-gray);
+    color: var(--deep-dark-gray);
+}
+
+.btn-rounded {
+    border-radius: 50px;
+}
